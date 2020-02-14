@@ -4,4 +4,4 @@ development mode
 * live-server
 
 production mode
-* visit -
+* visit - https://dc-notes-app.surge.sh/
