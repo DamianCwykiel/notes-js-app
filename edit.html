@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Edit</title>
+        <link href ="/styles/styles.css" rel="stylesheet">
+        <link href="/img/favicon.ico" rel="icon">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+              <h1 class="header__title">Notes</h1>
+              <h2 class="header__subtitle">Take notes never forget</h2>
+            </div>
+        </header>
+        <div class="actions">
+            <div class="actions__container actions__container--spaced">
+                <a href="/index.html">Home</a>
+                <span id ="last-edited"></span>
+            </div>  
+        </div>
+        <div class="container">
+            <input id="note-title" class="title-input" placeholder="note's title">
+        <textarea id ="note-body" class="body-input" placeholder="Enter some note"></textarea>      
+        <button id ="remove-note" class="button button--secondary">Remove</button>
+        <a href ="/">
+            <button id ="add-note" class=" button button--third">Add</button></a>
+        </div>
+        <script src ="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+        <script src="/scripts/notes-functions.js"></script>
+        <script src="/scripts/notes-edit.js"></script>
+    </body>
+</html>
