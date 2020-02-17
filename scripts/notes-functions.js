@@ -30,7 +30,7 @@ const generateNoteDOM = (note) => {
     if (note.title.length > 0) {
         textEl.textContent = note.title
     } else {
-        textEl.textContent = 'Unnamed Content'
+        textEl.textContent = 'No title'
     }
     // textEl.setAttribute('href', `/edit.html#${note.id}`)
     textEl.classList.add('list-item__title')
@@ -104,7 +104,7 @@ const renderNotes = (notes, filters) => {
         })
     } else {
         const emptyNotes = document.createElement('p')
-        emptyNotes.textContent = `You don't have notes here.`
+        emptyNotes.textContent = `You don't have notes here`
         emptyNotes.classList.add('empty-notes')
         notesEl.appendChild(emptyNotes)
     }

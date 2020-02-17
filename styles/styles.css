@@ -16,12 +16,14 @@ body {
   font-size: 1.6rem;
 }
 
-button {
-  cursor: pointer;
-}
-
 a {
     color: #396684;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555;
+    font-weight: 600;
 }
 
 /* Container */
@@ -35,19 +37,28 @@ a {
 /* Header */
 
 .header {
-  background: #43799c;
-  color: white;
+  background: #555;
+  border-bottom: 0.3px solid #DEDFE0;  
+  color: black;
   padding: 1.6rem 0;
+  text-align: center;
 }
 
 .header__title {
   font-size: 3.2rem;
+  font-family: 'Lemonada', cursive;
   margin-bottom: .4rem;
 }
 
+.header__title::first-letter {
+    color: rgb(230, 168, 13);
+    font-size: 4rem;
+}
+
 .header__subtitle {
-  font-size: 1.6rem;
-  font-weight: 300;
+    color: rgb(230, 168, 13);
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
 /* Actions Bar */
@@ -55,12 +66,14 @@ a {
 .actions {
     background-color: #F7F7F7;
     border-bottom: 1px solid #dedfe0;
-    padding: .8rem
+    padding: .8rem;
+    text-align: center;
 }
 
 .actions__container {
     align-items: center;
     display: flex;
+    justify-content: center;
     max-width: 60rem;
     margin: 0 auto;
     min-height: 3rem;
@@ -93,43 +106,6 @@ a {
     margin-right: .8rem;
 }
 
-.button {
-    background: #43799c;
-    border: none;
-    border-bottom: 2px solid #396684;
-    color: white;
-    font-size: 1.4rem;
-    font-weight: 300;
-    padding: .8rem;
-    transition: background .3s ease;
-}
-
-.button:hover {
-    background: #396684;
-}
-
-.button--secondary {
-    background: #888888;
-    border-bottom: 2px solid #717171;
-    font-weight:600;
-}
-
-.button--secondary:hover {
-    background: #6E6E6E;
-}
-
-.button--third {
-    background:  #228B22;
-    border-bottom: 2px solid #006400;
-    font-weight:600;
-    height: 4rem;
-    width: 7rem;
-}
-
-.button--third:hover {
-    background: #006400;
-}
-
 /* Note editor */
 
 .title-input {
@@ -152,6 +128,44 @@ a {
     min-height: 15rem;
     padding: .8rem;
     width: 100%;
+}
+
+.button {
+    background: #008000;
+    border: none;
+    border-bottom: 2px solid #008000;
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .8rem;
+    transition: background .3s ease;
+}
+
+.button:hover {
+    background: #006400;
+}
+
+.button--secondary {
+    background: #888888;
+    border-bottom: 2px solid #717171;
+    font-weight:600;
+}
+
+.button--secondary:hover {
+    background: #6E6E6E;
+}
+
+.button--third {
+    background:  #228B22;
+    border-bottom: 2px solid #006400;
+    font-weight:600;
+    height: 4rem;
+    width: 7rem;
+}
+
+.button--third:hover {
+    background: #006400;
 }
 
 /* Note List Item */
@@ -185,6 +199,7 @@ a {
 
 .empty-notes {
     font-size: 2.5rem;
+    font-family: 'Lemonada', cursive;
     font-weight: 500;
     text-align: center;
     margin: 5rem 0;
