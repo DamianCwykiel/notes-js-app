@@ -57,8 +57,8 @@ a:hover {
 
 .header__subtitle {
     color: rgb(230, 168, 13);
-  font-size: 1.3rem;
-  font-weight: 400;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 
 /* Actions Bar */
@@ -203,4 +203,96 @@ a:hover {
     font-weight: 500;
     text-align: center;
     margin: 5rem 0;
+}
+
+/* media queries */
+@media (min-width: 300px) and (orientation: portrait) {
+    a {
+        font-size: 3.5rem;
+    }
+    .header__title,.header__title::first-letter {
+        font-size: 5rem;
+    }
+    .header__subtitle {
+        font-size: 1.5rem;
+    }
+    .container {
+        text-align:center;
+    }
+    .button {
+        font-size: 3rem;
+        font-weight: 600;
+        padding: 3rem;
+        margin-bottom: 2rem;
+    }
+    .button--secondary {
+        padding: 3rem;
+        margin-bottom: 2rem;
+    }
+    .button--third {
+        display: none;
+    }
+    .input {
+        font-size: 2.5rem;
+        padding: 4rem 3rem;
+        max-width: 25rem;
+        text-align: center;
+    }
+    .dropdown {
+        border-radius: 5%;
+        font-size: 2.5rem;
+        height: 8rem;
+        margin-top: 1rem;
+        max-width: 25rem;
+    }
+    .actions__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .title-input {
+        font-size: 3rem;
+        height: 10rem;
+    }
+    .body-input {
+        font-size: 3rem;
+        height: 20rem;
+    }
+    .list-item {
+        height: 15rem;
+    }
+    .list-item:hover {
+        background: #eeeeee;
+    }
+    .list-item__title {
+        font-size: 3rem;
+        text-align:center;
+    }
+    .list-item__subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 700px) and (orientation: landscape) {
+    html {
+        font-size: 80%;
+      }
+    .container {
+        text-align:center;
+    }
+    a {
+        font-size: 2rem;
+    }
+    .button {
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+    .button--secondary {
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+    .button--third {
+        display: none;
+    }
 }
