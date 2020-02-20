@@ -220,28 +220,28 @@ a:hover {
         text-align:center;
     }
     .button {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 600;
-        padding: 3rem;
+        padding: 2rem;
         margin-bottom: 2rem;
     }
     .button--secondary {
-        padding: 3rem;
+        padding: 2rem;
         margin-bottom: 2rem;
     }
     .button--third {
         display: none;
     }
     .input {
-        font-size: 2.5rem;
-        padding: 4rem 3rem;
+        font-size: 2rem;
+        padding: 3rem 3rem;
         max-width: 25rem;
         text-align: center;
     }
     .dropdown {
         border-radius: 5%;
-        font-size: 2.5rem;
-        height: 8rem;
+        font-size: 2rem;
+        height: 5rem;
         margin-top: 1rem;
         max-width: 25rem;
     }
@@ -250,12 +250,12 @@ a:hover {
         flex-direction: column;
     }
     .title-input {
-        font-size: 3rem;
-        height: 10rem;
+        font-size: 2rem;
+        height: 8rem;
     }
     .body-input {
-        font-size: 3rem;
-        height: 20rem;
+        font-size: 2rem;
+        height: 17rem;
     }
     .list-item {
         height: 15rem;
