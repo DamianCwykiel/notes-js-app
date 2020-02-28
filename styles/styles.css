@@ -272,7 +272,7 @@ a:hover {
     }
 }
 
-@media (min-width: 700px) and (orientation: landscape) {
+@media (min-width: 700px)and (max-width: 900px) {
     html {
         font-size: 80%;
       }
